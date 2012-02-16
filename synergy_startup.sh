@@ -29,7 +29,6 @@ if [ $state = "closed" ]; then
 	if [ $myIP = $locationOneIP ]; then
 		/usr/bin/synergyc $synergyServerIP
 
-	# If we have the SERVERIP, start the server
 	# Start up the server if we get the IP address for locationTwoIP
 	elif [ $myIP = $locationTwoIP ]; then
 		/usr/bin/synergys --conf /etc/synergy.conf
